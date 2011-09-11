@@ -1,0 +1,9 @@
+import("statmod")
+
+useDynLib(mixcat)
+
+export(npmlt)
+
+S3method(print, npmreg)
+
+S3method(summary, npmreg)
