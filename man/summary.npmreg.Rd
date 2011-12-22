@@ -8,8 +8,8 @@
 \description{\code{summary} and \code{print} methods for objects of  type \code{npmreg}.}
 
 \usage{
-summary.npmreg(object,digits = max(3, getOption("digits") - 3),...)
-print.npmreg(x,digits = max(3, getOption("digits") - 3),...)}
+\method{summary}{npmreg}(object,digits = max(3, getOption("digits") - 3),...)
+\method{print}{npmreg}(x,digits = max(3, getOption("digits") - 3),...)}
 
 \arguments{
   \item{object}{an object of class \code{npmreg}.}

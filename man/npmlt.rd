@@ -172,8 +172,7 @@ of Statistics, 11, 783-792.}
 \examples{
 data(schizo)
 attach(schizo)
-npmlt(y~trt*sqrt(wk),formula.npo=~trt,random=~1,id=id,k=2)
-npmlt(y~trt*sqrt(wk),formula.npo=~trt,random=~1+trt,id=id,k=2,EB=TRUE)
+npmlt(y~trt*sqrt(wk),formula.npo=~trt,random=~1+trt,id=id,k=2,EB=FALSE)
 }
 
 \keyword{models}

@@ -1,3 +1,4 @@
+#include <string.h>
 #include <iostream>
 #include <fstream>
 #include <math.h>
@@ -5,7 +6,6 @@
 #include <cstdlib>
 #include <stdio.h>
 #include "matrix.h"
-#include <string.h>
 
 #include <gsl/gsl_vector.h>
 #include <gsl/gsl_matrix.h>

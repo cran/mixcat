@@ -45,9 +45,9 @@ Maintainer: Georgios Papageorgiou <gpapageo@gmail.com>}
 \section{Acknowledgments}{Papageorgiou's work was supported by the Science Foundation Ireland Research Frontiers grant 07/RFP/MATF448.}
 
 \references{
-Papageorgiou, G. and Hinde, J. (2010).
+Papageorgiou, G. and Hinde, J. (2012).
 Multivariate generalized linear mixed models with semi-nonparametric and smooth
-nonparametric random effects densities. Available online: Statistics and Computing}
+nonparametric random effects densities. Statistics and Computing 22, 79-92}
 
 \keyword{models}
 \keyword{regression}
