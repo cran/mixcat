@@ -10,7 +10,6 @@ function(formula,
          start.mp=NULL,
          start.m=NULL,
          link="clogit",
-         SEs="expected",
          EB=FALSE,
          maxit=500,
          na.rm=TRUE,
@@ -43,6 +42,9 @@ nnpo<-length(npo.mtch)
 npoind<-array(0,T)
 npoind[npo.mtch]<-1
 
+# If id is not provided, use seq(1,N)
+if (missing(id)) id<-seq(1,N)
+
 #Select only the complete cases and redefine resp, xp, zp, and id
 Temp<-as.data.frame(cbind(resp,id,xp,zp))
 if (na.rm==TRUE) Temp<-na.omit(Temp)
@@ -72,9 +74,8 @@ cuid<-c(0,cumsum(uid))
 linkchoice<-1
 if (link=="blogit") linkchoice<-0
 
-# Standard Errors: based on the expected (by default) or observed info matrix
-SEchoice<-1
-if (SEs=="observed") SEchoice<-0
+# Standard Errors: based on the observed info matrix
+SEchoice<-0
 
 # Empirical bayes for random effects: if EB=TRUE EB estimates of the random effects are provided
 EBindicator<-0
@@ -200,10 +201,15 @@ if (nrp==0) attr(mass.pointsSE,'names')<-c(paste('mass point',1:k,sep=' '))
 attr(massesSE,'names')<-c(paste('mass',1:k,sep=' '))
 attr(VRESE,'names')<-paste('SE.Var',dimnames(zp.ii)[[2]],sep=': ')
 
-cv.names<-c(paste('Random.(Intercept)',1:(k-1),sep=''))
-if (nrp>0) for (i in 1:nrp) cv.names<-c(cv.names,paste('Random',cvnames[i+1],1:(k-1),sep=' '))
-dimnames(CVmat)<-list(" "=c(paste('(Intercept)',1:q,sep=''),regsor.names,cv.names,paste('mass point',1:(k-1),sep=' ')),
-                      " "=c(paste('(Intercept)',1:q,sep=''),regsor.names,cv.names,paste('mass point',1:(k-1),sep=' ')))
+cv.names<-NULL
+if (k>1){
+   cv.names<-c(paste('Random.(Intercept)',1:(k-1),sep=''))
+   if (nrp>0) for (i in 1:nrp) cv.names<-c(cv.names,paste('Random',cvnames[i+1],1:(k-1),sep=' '))
+   cv.names<-c(cv.names,paste('mass point',1:(k-1),sep=' '))
+}
+
+dimnames(CVmat)<-list(" "=c(paste('(Intercept)',1:q,sep=''),regsor.names,cv.names),
+                      " "=c(paste('(Intercept)',1:q,sep=''),regsor.names,cv.names))
 
 #List of output
 fit<-list(call=call,

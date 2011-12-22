@@ -880,9 +880,9 @@ for (register int c = 0; c < rslpind ; c++){
 for (register int i=0; i<((1+rslpind)*(2+rslpind)/2); i++)
    out[q+np+npk+rslpind*npk+npk+i] = rec(i,0);
 
-// Covariance Matrix
+// Covariance Matrix based on the suqred derivative of the log-likelihood
 Matrix CovNP;
-if (obskey==0) NPMLSE(npk,m,q,np,CN,beta,EP,model,linkchoice,rslpind,rslp,tol,N,y,npoind,T);
+NPMLSE(npk,m,q,np,CN,beta,EP,model,linkchoice,rslpind,rslp,tol,N,y,npoind,T);
 CovNP = infonpml;  // the inversion is now done in the function
 
 for (register int i=0; i<(q+np+(rslpind+2)*(npk-1)); i++)

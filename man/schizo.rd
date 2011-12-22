@@ -4,7 +4,7 @@
 
 \docType{data}
 
-\title{NATIONAL INSTITUTE OF MENTAL HEALTH SCHIZOPHRENIA STUDY}
+\title{National Institute of Mental Health shizophrenia study}
 
 \description{Schizophrenia data from a randomized controlled trial
 with patients assigned to either drug or placebo group.

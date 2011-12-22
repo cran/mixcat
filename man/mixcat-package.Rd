@@ -5,13 +5,13 @@
 
 \docType{package}
 
-\title{MIXED EFFECTS REGRESSION MODELS FOR MULTICATEGORY DATA}
+\title{Mixed effects cumulative link and logistic regression models}
 
 \description{Mixed effects models for the analysis of binary or
              multinomial (ordinal or nominal) data with non-parametric
              distribution for the random effects.
              The main function  is \code{\link{npmlt}} and it fits
-             baseline or cumulative logit models.}
+             cumulative and baseline logit models.}
 
 \details{
 \tabular{ll}{
@@ -42,9 +42,7 @@ Georgios Papageorgiou and John Hinde (2011)
 
 Maintainer: Georgios Papageorgiou <gpapageo@gmail.com>}
 
-\section{Acknowledgments}{
-Papageorgiou's work on this \R package was supported by Science
-Foundation Ireland Research Frontiers grant 07/RFP/MATF448.}
+\section{Acknowledgments}{Papageorgiou's work was supported by the Science Foundation Ireland Research Frontiers grant 07/RFP/MATF448.}
 
 \references{
 Papageorgiou, G. and Hinde, J. (2010).

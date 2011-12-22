@@ -1,13 +1,13 @@
-03f89030519e167eab56133d786c7af8 *DESCRIPTION
+3cbc4d8517b302ddc84b5e8a2d7ce1d6 *DESCRIPTION
 dac18b8d53cfa9d838cde08d8557fcd8 *NAMESPACE
-a1ebf191ff54d9c023fd4020f75ebcbb *R/npmlt.R
+f69f65fd7028fc94b6dbc6750484e32a *R/npmlt.R
 d5f1bd52962cbe8bb94a02b9c4fcedf2 *R/print.npmreg.R
 5225b2da86ab1839c807db462a259b8a *R/summary.npmreg.R
 17623882a8a3cc7132c8cca2d0a8399f *data/schizo.rda
-bcd86eb4cb732d86802ed2ca3ea9bbfd *man/mixcat-package.Rd
-458d76f01c5dbb07de6575b2ef431c3c *man/npmlt.rd
-e62d3ca9713509b3b8d7a1f26bab4686 *man/schizo.rd
-0379f02bf94a68b33bb5ef7a8fc8d372 *man/summary.npmreg.Rd
+6126ffd56a3f58a958775f15409c8492 *man/mixcat-package.Rd
+62244e69dd2b198ee37ec869fbfa64ea *man/npmlt.rd
+459a123e42b6653fcc9086d69356d98d *man/schizo.rd
+19d9165e39d387f113eb7a6bfff8ba2b *man/summary.npmreg.Rd
 85bd6fb2d25bd1bf2d5d30087a0ff2eb *src/Makevars
 a849aa34c220b7e23a85dd80b38fc17d *src/gsl_blas.h
 d6d3d2be4d000a1f1e5645c111307e00 *src/gsl_linalg.h
@@ -43,5 +43,5 @@ fc5f837e47463f606175f241eb8e7cbc *src/gsl_vector_uint.h
 890c56a55cf6c4f28a205e178ca2cfaf *src/gsl_vector_ulong.h
 d3df3661aef36123f738faaf6ea05a84 *src/gsl_vector_ushort.h
 bbc590698a0e9a27e1a50152689f5f7e *src/matrix.h
-50d06413051be09319a2f31ff999619e *src/npmltc.cpp
+eb7a456ebec94c454f6a6b882aee94d1 *src/npmltc.cpp
 5e836a719dabfac5f570f2e037aaab07 *src/view.h
