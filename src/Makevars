@@ -1,1 +1,1 @@
-PKG_LIBS=-lgsl -lgslcblas 
+PKG_LIBS=-lgsl -lgslcblas

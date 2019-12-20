@@ -1,0 +1,17 @@
+citHeader("To cite the mixcat package in publications use:")
+  
+citEntry(entry="Article",
+        title = "Multivariate generalized linear mixed models with semi-nonparametric and smooth nonparametric random effects densities",
+        author = personList(as.person("Georgios Papageorgiou"), as.person("John Hinde")),
+        journal = "Statistics and Computing",         
+        year = "2012", 
+        volume = "22",
+        pages = "79--92",
+        doi = "10.1007/s11222-010-9207-y",
+        url = " https://doi.org/10.1007/s11222-010-9207-y",
+        
+        textVersion = paste("Papageorgiou, G. & Hinde, J. (2012)",
+                                          "Multivariate generalized linear mixed models with semi-nonparametric and smooth nonparametric random effects densities.",
+                                           "Statistics and Computing, 22, 79--92")
+)
+

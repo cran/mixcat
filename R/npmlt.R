@@ -140,7 +140,7 @@ npar<-2*(q+np+(1+1+nrp)*k)+2*(1+nrp)+nrp*(nrp+1)/2+2+2
 out<-.C("npmltd",as.integer(resp),as.integer(q),as.integer(N),as.integer(m),as.integer(cuid),as.integer(k),
 as.integer(np),as.double(xp),as.double(eps),as.double(strvlint),as.double(strvlreg),as.double(strvlmp),
 as.double(strvlm), as.double(array(0,npar)),as.integer(EBindicator),as.double(array(0,(m*(1+nrp)))),
-as.integer(linkchoice),as.integer(SEchoice),as.integer(maxit),as.double(zp),as.integer(nrp),
+as.integer(linkchoice),as.integer(maxit),as.double(zp),as.integer(nrp),
 as.double(array(0,(q*N))),as.double(array(0,((q+1)*N))),as.double(tol),as.double(npoind),as.integer(T),
 as.double(array(0,((q+np+(nrp+2)*(k-1))^2))))
 
@@ -148,9 +148,9 @@ as.double(array(0,((q+np+(nrp+2)*(k-1))^2))))
 output<-array(out[[14]][1:npar])
 ifelse(nrp>0,eBayes<-matrix(c(out[[16]][1:((1+nrp)*m)]),ncol=(1+nrp),nrow=m),
 eBayes<-c(out[[16]][1:((1+nrp)*m)]))
-fitted<-matrix(c(out[[22]][1:(q*N)]),nrow=q)
-prob<-matrix(c(out[[23]][1:((q+1)*N)]),nrow=(q+1))
-CVmat<-matrix(c(out[[27]][1:((q+np+(nrp+2)*(k-1))*(q+np+(nrp+2)*(k-1)))]),nrow=q+np+(nrp+2)*(k-1),ncol=q+np+(nrp+2)*(k-1))
+fitted<-matrix(c(out[[21]][1:(q*N)]),nrow=q)
+prob<-matrix(c(out[[22]][1:((q+1)*N)]),nrow=(q+1))
+CVmat<-matrix(c(out[[26]][1:((q+np+(nrp+2)*(k-1))*(q+np+(nrp+2)*(k-1)))]),nrow=q+np+(nrp+2)*(k-1),ncol=q+np+(nrp+2)*(k-1))
 
 # Give names to the columns of the matrix with the EB estimates
 if (nrp>0) dimnames(eBayes)<-list(" "=c()," "=c(dimnames(zp.ii)[[2]]))

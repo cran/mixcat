@@ -1,3 +1,4 @@
+importFrom("stats", "binomial", "cov2cor", "glm", "model.frame", "model.matrix", "na.omit", "na.pass")
 import("statmod")
 
 useDynLib(mixcat)

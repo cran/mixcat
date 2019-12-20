@@ -24,7 +24,7 @@ and the function \code{print} (i.e., \code{print.npmreg}) to print the results.}
 
 \value{Summary or print.}
 
-\author{Georgios Papageorgiou \email{gpapageo@gmail.com} and John Hinde}
+\author{Georgios Papageorgiou \email{gpapageo@gmail.com}}
 
 \seealso{\code{\link{npmlt}}}
 

@@ -17,8 +17,8 @@
 \tabular{ll}{
 Package: \tab mixcat\cr
 Type: \tab Package\cr
-Version: \tab 1.0-0\cr
-Date: \tab 2011-09-11\cr
+Version: \tab 1.0-4\cr
+Date: \tab 2019-12-20\cr
 License: \tab GPL (>=2)\cr
 LazyLoad: \tab no\cr}
 
@@ -51,5 +51,3 @@ nonparametric random effects densities. Statistics and Computing 22, 79-92}
 
 \keyword{models}
 \keyword{regression}
-
-\seealso{ \code{\link[npmlreg]{npmlreg}}}

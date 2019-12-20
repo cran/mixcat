@@ -165,14 +165,16 @@ American Statistical Association, 73, 805-811.
 Lindsay, B. G. (1983). The geometry of mixture likelihoods, Part II: The exponential family. The Annals
 of Statistics, 11, 783-792.}
 
-\author{Georgios Papageorgiou \email{gpapageo@gmail.com} and John Hinde}
+\author{Georgios Papageorgiou \email{gpapageo@gmail.com}}
 
-\seealso{\code{\link[npmlreg]{allvc}},\code{\link{summary.npmreg}}}
+\seealso{\code{\link{summary.npmreg}}}
 
 \examples{
 data(schizo)
 attach(schizo)
+\donttest{
 npmlt(y~trt*sqrt(wk),formula.npo=~trt,random=~1+trt,id=id,k=2,EB=FALSE)
+}
 }
 
 \keyword{models}
